@@ -1,0 +1,18 @@
+cabal-version:      3.0
+name:               TypesAndIO
+version:            0.1.0.0
+author:             Daniel Kröni
+maintainer:         daniel.kroeni@fhnw.ch
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable wttr
+  import:              warnings
+  default-language:    Haskell2010
+  main-is:             Main.hs
+  build-depends:       base ^>=4.16.0.0
+                      ,http-client-tls
+                      ,http-client
+                      ,bytestring

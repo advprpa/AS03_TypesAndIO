@@ -13,7 +13,7 @@ Examples:
 |---         |---                                   |---            |
 |Void        |`data Void`                           |0              |
 |Unit        |`data () = ()`                        |1              |
-|Sum         |`data Either a b = Left a \| Left`    | \|a\| + \|b\| |
+|Sum         |`data Either a b = Left a \| Right b` | \|a\| + \|b\| |
 |Product     |`data (a,b) = (a,b)`                  | \|a\| * \|b\| |
 |Exponential |`data (a->b) = a->b`                  |  \|b\|^\|a\|  |
 
